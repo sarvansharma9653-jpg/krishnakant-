@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership | ISTD Jaipur Chapter - Indian Society for Training & Development</title>
+  <meta name="description" content="Join ISTD Jaipur Chapter. Categories of membership, fee structure, life membership, student membership, institutional membership, and benefits.">
+  <link rel="icon" type="image/png" href="assets/images/fav.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, rgba(10, 31, 68, 0.95) 0%, rgba(4, 92, 180, 0.9) 100%), url('assets/images/DSC_1692.jpg') center/cover no-repeat;
+      color: var(--white);
+      padding: 70px 0;
+      text-align: center;
+    }
+    .page-hero h1 { font-size: 2.6rem; font-weight: 800; margin-bottom: 12px; }
+    .breadcrumbs { display: flex; justify-content: center; gap: 8px; font-size: 0.9rem; color: #cbd5e1; }
+    .breadcrumbs a:hover { color: var(--accent-gold); }
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
+    .pricing-card { background: #fff; border-radius: 12px; border: 1px solid var(--border-color); padding: 35px 25px; box-shadow: var(--shadow-sm); text-align: center; display: flex; flex-direction: column; transition: var(--transition); position: relative; }
+    .pricing-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); border-color: var(--primary-light); }
+    .pricing-card.featured { border: 2px solid var(--primary-color); }
+    .pricing-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: #fff; font-size: 0.78rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; text-transform: uppercase; }
+    .plan-name { font-size: 1.4rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 10px; }
+    .plan-price { font-size: 2.2rem; font-weight: 800; color: var(--primary-color); margin-bottom: 20px; }
+    .plan-price span { font-size: 0.9rem; color: var(--text-muted); font-weight: 500; }
+    .plan-features { list-style: none; text-align: left; display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; flex-grow: 1; }
+    .plan-features li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: var(--text-dark); }
+    .plan-features li i { color: #10b981; margin-top: 3px; }
+    @media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Ticker -->
+  <div class="top-ticker">
+    <div class="container">
+      <div class="ticker-badge"><i class="fas fa-bullhorn"></i> Membership Drive</div>
+      <div class="ticker-content">
+        <div class="ticker-track">
+          <span class="ticker-item"><i class="fas fa-id-card"></i> ISTD Jaipur Chapter Membership Drive 2026 – Apply Online</span>
+          <span class="ticker-item"><i class="fas fa-book"></i> Free Quarterly Subscription to IJTD Journal for all Members</span>
+          <span class="ticker-item"><i class="fas fa-calendar-check"></i> Certified Train the Trainer – 18-20 Dec 2026</span>
+          <span class="ticker-item"><i class="fas fa-id-card"></i> ISTD Jaipur Chapter Membership Drive 2026 – Apply Online</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-contact">
+        <a href="tel:01149077807"><i class="fas fa-phone-alt"></i> 011-49077807 / +91 98290 12345</a>
+        <a href="mailto:jaipuristd@gmail.com"><i class="fas fa-envelope"></i> jaipuristd@gmail.com</a>
+        <span><i class="fas fa-map-marker-alt"></i> Jaipur Chapter, Rajasthan</span>
+      </div>
+      <div class="top-actions">
+        <a href="membership.html" class="auth-btn auth-btn-register"><i class="fas fa-user-plus"></i> Register</a>
+        <a href="#" class="auth-btn auth-btn-login open-login-modal"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo-wrapper">
+          <img src="assets/images/istd-logo_d2.png" alt="ISTD Jaipur Logo" class="logo-img">
+          <div class="brand-text">
+            <span class="brand-title">Indian Society for Training &amp; Development</span>
+            <span class="brand-subtitle">Jaipur Chapter</span>
+            <span class="brand-subtext">Affiliated to IFTDO Geneva &bull; Estd. April 1970</span>
+          </div>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+
+        <nav class="main-nav" id="mainNav">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="pgp-tld.html" class="nav-link">PGP-TL&amp;D</a></li>
+            <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+            <li class="nav-item active"><a href="membership.html" class="nav-link">Membership</a></li>
+            <li class="nav-item"><a href="ijtd.html" class="nav-link">IJTD</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>ISTD Membership &amp; Affiliation</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <span>Membership</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Membership Plans -->
+  <section class="section-padding" id="categories" style="background-color: var(--bg-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Join the Fraternity</span>
+        <h2 class="section-title">Membership Categories &amp; Fees</h2>
+        <div class="section-divider"></div>
+        <p style="margin-top: 15px; color: var(--text-muted);">
+          Gain nationwide professional status, research journal access, voting rights, and networking with over 13,500 training professionals.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Student Member -->
+        <div class="pricing-card">
+          <h3 class="plan-name">Student Member</h3>
+          <div class="plan-price">₹1,500 <span>/ year + GST</span></div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> For full-time students &amp; research scholars</li>
+            <li><i class="fas fa-check"></i> Access to digital IJTD research journal</li>
+            <li><i class="fas fa-check"></i> Concessional fee for workshops &amp; webinars</li>
+            <li><i class="fas fa-check"></i> Mentorship from senior trainers in Jaipur</li>
+            <li><i class="fas fa-check"></i> Invitation to local Chapter meets</li>
+          </ul>
+          <a href="#apply" class="btn btn-outline-blue">Apply for Student</a>
+        </div>
+
+        <!-- Life Member (Featured) -->
+        <div class="pricing-card featured">
+          <span class="pricing-badge">Most Popular</span>
+          <h3 class="plan-name">Individual Life Member</h3>
+          <div class="plan-price">₹11,800 <span>(One-time inc. GST)</span></div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> Lifetime membership of ISTD &amp; Jaipur Chapter</li>
+            <li><i class="fas fa-check"></i> Free lifetime print/digital subscription of IJTD</li>
+            <li><i class="fas fa-check"></i> Full voting rights in ISTD elections &amp; Council</li>
+            <li><i class="fas fa-check"></i> Discount on all national conferences &amp; TTT</li>
+            <li><i class="fas fa-check"></i> Professional networking across 54+ Chapters</li>
+            <li><i class="fas fa-check"></i> Use of ISTD post-nominals &amp; credentials</li>
+          </ul>
+          <a href="#apply" class="btn btn-blue">Apply for Life Membership</a>
+        </div>
+
+        <!-- Institutional Member -->
+        <div class="pricing-card">
+          <h3 class="plan-name">Institutional Member</h3>
+          <div class="plan-price">₹35,000 <span>/ 3 Years + GST</span></div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> For Corporates, Universities, Colleges &amp; PSUs</li>
+            <li><i class="fas fa-check"></i> Nominate up to 3 official organizational delegates</li>
+            <li><i class="fas fa-check"></i> 2 copies of IJTD Journal per issue</li>
+            <li><i class="fas fa-check"></i> Preference for campus FDPs &amp; corporate MDPs</li>
+            <li><i class="fas fa-check"></i> Partnership branding at Jaipur Chapter conclaves</li>
+          </ul>
+          <a href="#apply" class="btn btn-outline-blue">Apply for Organization</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="section-padding" id="apply">
+    <div class="container">
+      <div style="max-width: 720px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);">
+        <h3 style="font-size: 1.8rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 8px;">Online Membership Application</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px;">
+          Submit your application to ISTD Jaipur Chapter. Our secretariat will verify your credentials and guide you with the formal registration.
+        </p>
+
+        <form id="membershipForm" onsubmit="event.preventDefault(); alert('Thank you! Your membership application has been received by ISTD Jaipur Chapter. We will contact you for verification.'); this.reset();">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-control" required placeholder="Dr. / Mr. / Ms. Full Name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="form-control" required placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile Number *</label>
+            <input type="tel" class="form-control" required placeholder="+91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Membership Category *</label>
+            <select class="form-control" required>
+              <option value="Life Member">Individual Life Member (₹11,800)</option>
+              <option value="Student Member">Student Member (₹1,500/yr)</option>
+              <option value="Annual Member">Individual Annual Member</option>
+              <option value="Institutional Member">Institutional / Corporate Member</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current Designation &amp; Organization</label>
+            <input type="text" class="form-control" placeholder="e.g. Head HR, ABC Ltd. / Professor, Univ of Rajasthan">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Address in Rajasthan / India</label>
+            <textarea class="form-control" rows="3" placeholder="Mailing address for IJTD journal dispatch"></textarea>
+          </div>
+          <button type="submit" class="form-submit-btn">
+            <i class="fas fa-check-circle"></i> Submit Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>&copy; 2026 <strong>ISTD Jaipur Chapter</strong> &bull; Indian Society for Training &amp; Development. All Rights Reserved.</div>
+        <div><a href="index.html">Back to Home</a> | <a href="contact.html">Contact Us</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
