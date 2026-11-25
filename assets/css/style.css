@@ -265,9 +265,16 @@ button, input, select, textarea {
 }
 
 .logo-img {
-  height: 64px;
+  height: 68px;
   width: auto;
+  max-width: 80px;
   object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 43, 91, 0.08));
+  transition: transform 0.3s ease;
+}
+
+.logo-wrapper:hover .logo-img {
+  transform: scale(1.03);
 }
 
 .brand-text {
